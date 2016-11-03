@@ -1,0 +1,15 @@
+.sebm-google-map-container {
+  height: 600px;
+  width: 1000px;
+}
+
+.address-input{
+  width: 83%;
+  float: right;
+}
+
+.icon-img{
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+}
