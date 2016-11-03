@@ -15,10 +15,10 @@ export class MapComponent implements OnInit {
 
   markers: MarkerSettings[] = [];
   icons: String[] = [
-        "http://www.myiconfinder.com/uploads/iconsets/256-256-a5485b563efc4511e0cd8bd04ad0fe9e.png",
-        "http://icons.iconarchive.com/icons/paomedia/small-n-flat/512/map-marker-icon.png",
-        "http://www.iconsdb.com/icons/preview/orange/marker-xxl.png",
-        "https://cdn1.iconfinder.com/data/icons/Map-Markers-Icons-Demo-PNG/256/Map-Marker-Marker-Outside-Chartreuse.png"];
+        "http://icons.iconarchive.com/icons/icons-land/vista-map-markers/32/Map-Marker-Marker-Outside-Chartreuse-icon.png",
+        "http://icons.iconarchive.com/icons/icons-land/vista-map-markers/32/Map-Marker-Marker-Outside-Pink-icon.png",
+        "http://icons.iconarchive.com/icons/icons-land/vista-map-markers/32/Map-Marker-Marker-Outside-Azure-icon.png"
+  ];
 
   mapS = new MapSettings(31, 36, 6, true, false, false);
 
