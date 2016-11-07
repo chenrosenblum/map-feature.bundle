@@ -341,7 +341,11 @@ $export.P = 8;   // proto
 $export.B = 16;  // bind
 $export.W = 32;  // wrap
 $export.U = 64;  // safe
-$export.R = 128; // real proto method for `library` 
+<<<<<<< HEAD
+$export.R = 128; // real proto method for `library`
+=======
+$export.R = 128; // real proto method for `library`
+>>>>>>> 746e3b0da798ee6594ffa2b849e0bc909a4acf70
 module.exports = $export;
 
 /***/ },
@@ -8147,7 +8151,11 @@ var GoogleMapsAPIWrapper = (function () {
         return this._map.then(function (m) { return google.maps.event.trigger(m, eventName); });
     };
     GoogleMapsAPIWrapper = __decorate([
-        core_1.Injectable(), 
+<<<<<<< HEAD
+        core_1.Injectable(),
+=======
+        core_1.Injectable(),
+>>>>>>> 746e3b0da798ee6594ffa2b849e0bc909a4acf70
         __metadata('design:paramtypes', [maps_api_loader_1.MapsAPILoader, core_1.NgZone])
     ], GoogleMapsAPIWrapper);
     return GoogleMapsAPIWrapper;
@@ -18201,7 +18209,11 @@ var MarkerManager = (function () {
         });
     };
     MarkerManager = __decorate([
-        core_1.Injectable(), 
+<<<<<<< HEAD
+        core_1.Injectable(),
+=======
+        core_1.Injectable(),
+>>>>>>> 746e3b0da798ee6594ffa2b849e0bc909a4acf70
         __metadata('design:paramtypes', [google_maps_api_wrapper_1.GoogleMapsAPIWrapper, core_1.NgZone])
     ], MarkerManager);
     return MarkerManager;
@@ -18237,7 +18249,11 @@ var MapsAPILoader = (function () {
     function MapsAPILoader() {
     }
     MapsAPILoader = __decorate([
-        core_1.Injectable(), 
+<<<<<<< HEAD
+        core_1.Injectable(),
+=======
+        core_1.Injectable(),
+>>>>>>> 746e3b0da798ee6594ffa2b849e0bc909a4acf70
         __metadata('design:paramtypes', [])
     ], MapsAPILoader);
     return MapsAPILoader;
@@ -23992,7 +24008,11 @@ var ResolvedReflectiveFactory = (function () {
         /**
          * Factory function which can return an instance of an object represented by a key.
          */
-        factory, 
+<<<<<<< HEAD
+        factory,
+=======
+        factory,
+>>>>>>> 746e3b0da798ee6594ffa2b849e0bc909a4acf70
         /**
          * Arguments (dependencies) to the `factory` function.
          */
@@ -27292,7 +27312,11 @@ var SebmGoogleMapInfoWindow = (function () {
             inputs: ['latitude', 'longitude', 'disableAutoPan', 'isOpen', 'zIndex', 'maxWidth'],
             outputs: ['infoWindowClose'],
             template: "<div class='sebm-google-map-info-window-content'>\n      <ng-content></ng-content>\n    </div>\n  "
-        }), 
+<<<<<<< HEAD
+        }),
+=======
+        }),
+>>>>>>> 746e3b0da798ee6594ffa2b849e0bc909a4acf70
         __metadata('design:paramtypes', [info_window_manager_1.InfoWindowManager, core_1.ElementRef])
     ], SebmGoogleMapInfoWindow);
     return SebmGoogleMapInfoWindow;
@@ -27345,19 +27369,35 @@ var SebmGoogleMapPolylinePoint = (function () {
         }
     };
     __decorate([
-        core_1.Input(), 
+<<<<<<< HEAD
+        core_1.Input(),
         __metadata('design:type', Number)
     ], SebmGoogleMapPolylinePoint.prototype, "latitude", void 0);
     __decorate([
-        core_1.Input(), 
+        core_1.Input(),
         __metadata('design:type', Number)
     ], SebmGoogleMapPolylinePoint.prototype, "longitude", void 0);
     __decorate([
-        core_1.Output(), 
+        core_1.Output(),
         __metadata('design:type', core_1.EventEmitter)
     ], SebmGoogleMapPolylinePoint.prototype, "positionChanged", void 0);
     SebmGoogleMapPolylinePoint = __decorate([
-        core_1.Directive({ selector: 'sebm-google-map-polyline-point' }), 
+        core_1.Directive({ selector: 'sebm-google-map-polyline-point' }),
+=======
+        core_1.Input(),
+        __metadata('design:type', Number)
+    ], SebmGoogleMapPolylinePoint.prototype, "latitude", void 0);
+    __decorate([
+        core_1.Input(),
+        __metadata('design:type', Number)
+    ], SebmGoogleMapPolylinePoint.prototype, "longitude", void 0);
+    __decorate([
+        core_1.Output(),
+        __metadata('design:type', core_1.EventEmitter)
+    ], SebmGoogleMapPolylinePoint.prototype, "positionChanged", void 0);
+    SebmGoogleMapPolylinePoint = __decorate([
+        core_1.Directive({ selector: 'sebm-google-map-polyline-point' }),
+>>>>>>> 746e3b0da798ee6594ffa2b849e0bc909a4acf70
         __metadata('design:paramtypes', [])
     ], SebmGoogleMapPolylinePoint);
     return SebmGoogleMapPolylinePoint;
@@ -27475,7 +27515,11 @@ var CircleManager = (function () {
         });
     };
     CircleManager = __decorate([
-        core_1.Injectable(), 
+<<<<<<< HEAD
+        core_1.Injectable(),
+=======
+        core_1.Injectable(),
+>>>>>>> 746e3b0da798ee6594ffa2b849e0bc909a4acf70
         __metadata('design:paramtypes', [google_maps_api_wrapper_1.GoogleMapsAPIWrapper, core_1.NgZone])
     ], CircleManager);
     return CircleManager;
@@ -27570,7 +27614,11 @@ var InfoWindowManager = (function () {
         this._infoWindows.set(infoWindow, infoWindowPromise);
     };
     InfoWindowManager = __decorate([
-        core_1.Injectable(), 
+<<<<<<< HEAD
+        core_1.Injectable(),
+=======
+        core_1.Injectable(),
+>>>>>>> 746e3b0da798ee6594ffa2b849e0bc909a4acf70
         __metadata('design:paramtypes', [google_maps_api_wrapper_1.GoogleMapsAPIWrapper, core_1.NgZone, marker_manager_1.MarkerManager])
     ], InfoWindowManager);
     return InfoWindowManager;
@@ -27666,7 +27714,11 @@ var PolylineManager = (function () {
         });
     };
     PolylineManager = __decorate([
-        core_1.Injectable(), 
+<<<<<<< HEAD
+        core_1.Injectable(),
+=======
+        core_1.Injectable(),
+>>>>>>> 746e3b0da798ee6594ffa2b849e0bc909a4acf70
         __metadata('design:paramtypes', [google_maps_api_wrapper_1.GoogleMapsAPIWrapper, core_1.NgZone])
     ], PolylineManager);
     return PolylineManager;
@@ -27808,7 +27860,11 @@ var LazyMapsAPILoader = (function (_super) {
         core_1.Injectable(),
         __param(0, core_1.Optional()),
         __param(1, core_1.Inject(browser_globals_1.WINDOW_GLOBAL)),
-        __param(2, core_1.Inject(browser_globals_1.DOCUMENT_GLOBAL)), 
+<<<<<<< HEAD
+        __param(2, core_1.Inject(browser_globals_1.DOCUMENT_GLOBAL)),
+=======
+        __param(2, core_1.Inject(browser_globals_1.DOCUMENT_GLOBAL)),
+>>>>>>> 746e3b0da798ee6594ffa2b849e0bc909a4acf70
         __metadata('design:paramtypes', [LazyMapsAPILoaderConfig, Window, Document])
     ], LazyMapsAPILoader);
     return LazyMapsAPILoader;
@@ -27912,7 +27968,11 @@ module.exports = function(NAME, wrapper, methods, common, IS_MAP, IS_WEAK){
         while(index--)$instance[ADDER](index, index);
         return !$instance.has(-0);
       });
-    if(!ACCEPT_ITERABLES){ 
+<<<<<<< HEAD
+    if(!ACCEPT_ITERABLES){
+=======
+    if(!ACCEPT_ITERABLES){
+>>>>>>> 746e3b0da798ee6594ffa2b849e0bc909a4acf70
       C = wrapper(function(target, iterable){
         anInstance(target, C, NAME);
         var that = inheritIfRequired(new Base, target, C);
@@ -42212,7 +42272,11 @@ var SebmGoogleMapCircle = (function () {
                 'centerChange', 'circleClick', 'circleDblClick', 'drag', 'dragEnd', 'dragStart', 'mouseDown',
                 'mouseMove', 'mouseOut', 'mouseOver', 'mouseUp', 'radiusChange', 'rightClick'
             ]
-        }), 
+<<<<<<< HEAD
+        }),
+=======
+        }),
+>>>>>>> 746e3b0da798ee6594ffa2b849e0bc909a4acf70
         __metadata('design:paramtypes', [circle_manager_1.CircleManager])
     ], SebmGoogleMapCircle);
     return SebmGoogleMapCircle;
@@ -42378,7 +42442,11 @@ var SebmGoogleMapMarker = (function () {
         this._observableSubscriptions.forEach(function (s) { return s.unsubscribe(); });
     };
     __decorate([
-        core_1.ContentChild(google_map_info_window_1.SebmGoogleMapInfoWindow), 
+<<<<<<< HEAD
+        core_1.ContentChild(google_map_info_window_1.SebmGoogleMapInfoWindow),
+=======
+        core_1.ContentChild(google_map_info_window_1.SebmGoogleMapInfoWindow),
+>>>>>>> 746e3b0da798ee6594ffa2b849e0bc909a4acf70
         __metadata('design:type', google_map_info_window_1.SebmGoogleMapInfoWindow)
     ], SebmGoogleMapMarker.prototype, "_infoWindow", void 0);
     SebmGoogleMapMarker = __decorate([
@@ -42389,7 +42457,11 @@ var SebmGoogleMapMarker = (function () {
                 'openInfoWindow', 'fitBounds', 'opacity', 'visible', 'zIndex'
             ],
             outputs: ['markerClick', 'dragEnd']
-        }), 
+<<<<<<< HEAD
+        }),
+=======
+        }),
+>>>>>>> 746e3b0da798ee6594ffa2b849e0bc909a4acf70
         __metadata('design:paramtypes', [marker_manager_1.MarkerManager])
     ], SebmGoogleMapMarker);
     return SebmGoogleMapMarker;
@@ -42601,7 +42673,11 @@ var SebmGoogleMapPolyline = (function () {
         'zIndex'
     ];
     __decorate([
-        core_1.ContentChildren(google_map_polyline_point_1.SebmGoogleMapPolylinePoint), 
+<<<<<<< HEAD
+        core_1.ContentChildren(google_map_polyline_point_1.SebmGoogleMapPolylinePoint),
+=======
+        core_1.ContentChildren(google_map_polyline_point_1.SebmGoogleMapPolylinePoint),
+>>>>>>> 746e3b0da798ee6594ffa2b849e0bc909a4acf70
         __metadata('design:type', core_1.QueryList)
     ], SebmGoogleMapPolyline.prototype, "_points", void 0);
     SebmGoogleMapPolyline = __decorate([
@@ -42615,7 +42691,11 @@ var SebmGoogleMapPolyline = (function () {
                 'lineClick', 'lineDblClick', 'lineDrag', 'lineDragEnd', 'lineMouseDown', 'lineMouseMove',
                 'lineMouseOut', 'lineMouseOver', 'lineMouseUp', 'lineRightClick'
             ]
-        }), 
+<<<<<<< HEAD
+        }),
+=======
+        }),
+>>>>>>> 746e3b0da798ee6594ffa2b849e0bc909a4acf70
         __metadata('design:paramtypes', [polyline_manager_1.PolylineManager])
     ], SebmGoogleMapPolyline);
     return SebmGoogleMapPolyline;
@@ -42941,7 +43021,11 @@ var SebmGoogleMap = (function () {
             host: { '[class.sebm-google-map-container]': 'true' },
             styles: ["\n    .sebm-google-map-container-inner {\n      width: inherit;\n      height: inherit;\n    }\n    .sebm-google-map-content {\n      display:none;\n    }\n  "],
             template: "\n    <div class='sebm-google-map-container-inner'></div>\n    <div class='sebm-google-map-content'>\n      <ng-content></ng-content>\n    </div>\n  "
-        }), 
+<<<<<<< HEAD
+        }),
+=======
+        }),
+>>>>>>> 746e3b0da798ee6594ffa2b849e0bc909a4acf70
         __metadata('design:paramtypes', [core_1.ElementRef, google_maps_api_wrapper_1.GoogleMapsAPIWrapper])
     ], SebmGoogleMap);
     return SebmGoogleMap;
@@ -43017,7 +43101,11 @@ var AppComponent = (function () {
             selector: 'app-root',
             template: __webpack_require__(672),
             styles: [__webpack_require__(670)]
-        }), 
+<<<<<<< HEAD
+        }),
+=======
+        }),
+>>>>>>> 746e3b0da798ee6594ffa2b849e0bc909a4acf70
         __metadata('design:paramtypes', [])
     ], AppComponent);
     return AppComponent;
@@ -43101,7 +43189,11 @@ var MappingService = (function () {
         this.markers.push(m);
     };
     MappingService = __decorate([
-        core_1.Injectable(), 
+<<<<<<< HEAD
+        core_1.Injectable(),
+=======
+        core_1.Injectable(),
+>>>>>>> 746e3b0da798ee6594ffa2b849e0bc909a4acf70
         __metadata('design:paramtypes', [(typeof (_a = typeof http_1.Http !== 'undefined' && http_1.Http) === 'function' && _a) || Object])
     ], MappingService);
     return MappingService;
@@ -57912,7 +58004,11 @@ var AgmCoreModule = (function () {
         };
     };
     AgmCoreModule = __decorate([
-        core_1.NgModule({ declarations: CORE_DIRECTIVES, exports: CORE_DIRECTIVES }), 
+<<<<<<< HEAD
+        core_1.NgModule({ declarations: CORE_DIRECTIVES, exports: CORE_DIRECTIVES }),
+=======
+        core_1.NgModule({ declarations: CORE_DIRECTIVES, exports: CORE_DIRECTIVES }),
+>>>>>>> 746e3b0da798ee6594ffa2b849e0bc909a4acf70
         __metadata('design:paramtypes', [])
     ], AgmCoreModule);
     return AgmCoreModule;
@@ -58133,7 +58229,11 @@ var MapComponent = (function () {
             selector: 'mf-map',
             template: __webpack_require__(671),
             styles: [__webpack_require__(669)]
-        }), 
+<<<<<<< HEAD
+        }),
+=======
+        }),
+>>>>>>> 746e3b0da798ee6594ffa2b849e0bc909a4acf70
         __metadata('design:paramtypes', [(typeof (_a = typeof mapping_service_service_1.MappingService !== 'undefined' && mapping_service_service_1.MappingService) === 'function' && _a) || Object])
     ], MapComponent);
     return MapComponent;
@@ -58185,7 +58285,11 @@ var AppModule = (function () {
             ],
             providers: [mapping_service_service_1.MappingService],
             bootstrap: [app_component_1.AppComponent]
-        }), 
+<<<<<<< HEAD
+        }),
+=======
+        }),
+>>>>>>> 746e3b0da798ee6594ffa2b849e0bc909a4acf70
         __metadata('design:paramtypes', [])
     ], AppModule);
     return AppModule;
@@ -59328,7 +59432,11 @@ var $export = __webpack_require__(2)
 $export($export.S + $export.F * !($acosh
   // V8 bug: https://code.google.com/p/v8/issues/detail?id=3509
   && Math.floor($acosh(Number.MAX_VALUE)) == 710
-  // Tor Browser bug: Math.acosh(Infinity) -> NaN 
+<<<<<<< HEAD
+  // Tor Browser bug: Math.acosh(Infinity) -> NaN
+=======
+  // Tor Browser bug: Math.acosh(Infinity) -> NaN
+>>>>>>> 746e3b0da798ee6594ffa2b849e0bc909a4acf70
   && $acosh(Infinity) == Infinity
 ), 'Math', {
   acosh: function acosh(x){
@@ -59350,7 +59458,11 @@ function asinh(x){
   return !isFinite(x = +x) || x == 0 ? x : x < 0 ? -asinh(-x) : Math.log(x + Math.sqrt(x * x + 1));
 }
 
-// Tor Browser bug: Math.asinh(0) -> -0 
+<<<<<<< HEAD
+// Tor Browser bug: Math.asinh(0) -> -0
+=======
+// Tor Browser bug: Math.asinh(0) -> -0
+>>>>>>> 746e3b0da798ee6594ffa2b849e0bc909a4acf70
 $export($export.S + $export.F * !($asinh && 1 / $asinh(0) > 0), 'Math', {asinh: asinh});
 
 /***/ },
@@ -59361,7 +59473,11 @@ $export($export.S + $export.F * !($asinh && 1 / $asinh(0) > 0), 'Math', {asinh: 
 var $export = __webpack_require__(2)
   , $atanh  = Math.atanh;
 
-// Tor Browser bug: Math.atanh(-0) -> 0 
+<<<<<<< HEAD
+// Tor Browser bug: Math.atanh(-0) -> 0
+=======
+// Tor Browser bug: Math.atanh(-0) -> 0
+>>>>>>> 746e3b0da798ee6594ffa2b849e0bc909a4acf70
 $export($export.S + $export.F * !($atanh && 1 / $atanh(-0) < 0), 'Math', {
   atanh: function atanh(x){
     return (x = +x) == 0 ? x : Math.log((1 + x) / (1 - x)) / 2;
@@ -59906,7 +60022,11 @@ $export($export.P + $export.F * ($fails(function(){
 })), 'Number', {
   toPrecision: function toPrecision(precision){
     var that = aNumberValue(this, 'Number#toPrecision: incorrect invocation!');
-    return precision === undefined ? $toPrecision.call(that) : $toPrecision.call(that, precision); 
+<<<<<<< HEAD
+    return precision === undefined ? $toPrecision.call(that) : $toPrecision.call(that, precision);
+=======
+    return precision === undefined ? $toPrecision.call(that) : $toPrecision.call(that, precision);
+>>>>>>> 746e3b0da798ee6594ffa2b849e0bc909a4acf70
   }
 });
 
@@ -61251,6 +61371,10 @@ process.umask = function() { return 0; };
 
 module.exports = ".sebm-google-map-container {\n  height: 200px;\n  width: 500px;\n}\n\n.address-input{\n  width: 83%;\n  float: right;\n}\n\n.icon-img{\n  /*width: 45px;\n  height: 45px;*/\n  cursor: pointer;\n}\n\n.pop-up-element{\n  font-size: 15px !important;\n}\n\n.pop-up-ul{\n  margin: 1px !important;\n}\n"
 
+module.exports = ".sebm-google-map-container {\n  height: 200px;\n  width: 500px;\n}\n\n.address-input{\n  width: 83%;\n  float: right;\n}\n\n.icon-img{\n  /*width: 45px;\n  height: 45px;*/\n  cursor: pointer;\n}\n\n.pop-up-element{\n  font-size: 15px !important;\n\n}\n\n"
+>>>>>>> 87b37a7104d7826dfb5964884ec4003c9ec66a7f
+
+>>>>>>> 746e3b0da798ee6594ffa2b849e0bc909a4acf70
 /***/ },
 /* 670 */
 /***/ function(module, exports) {
@@ -61263,7 +61387,9 @@ module.exports = ""
 
 module.exports = "<button class=\"btn btn-primary glyphicon glyphicon-cog\" (click)=\"addressShown = !addressShown;\" title=\"Address\"></button>\n<!--button class=\"btn btn-success glyphicon glyphicon-flag\" (click)=\"languageShown = !languageShown;addressShown=false;\" title=\"Language\"></button-->\n\n<div *ngIf=\"addressShown\" role=\"dialog\" style=\"z-index: 999999;position: fixed;direction: rtl;width: 280px;\"\n     class=\"ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-dialog-buttons ui-draggable ui-resizable secondLevel\">\n  <!--div class=\"ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix ui-draggable-handle\"-->\n    <div class=\"modal-content\">\n      <!--div class=\"ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix ui-draggable-handle\">\n        <button type=\"button\" class=\"ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close\" data-dismiss=\"modal\" (click)=\"addressShown=false;\">&times;</button>\n      </div-->\n      <div class=\"pop-up-element ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix ui-draggable-handle\">\n        <span id=\"ui-id-4\" class=\"ui-dialog-title\">הוספת סמן</span>\n        <button type=\"button\" (click)=\"addressShown=false;\" style=\"float: right\" class=\"ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close\" role=\"button\" title=\"Close\">\n          <span class=\"ui-button-icon-primary ui-icon ui-icon-closethick\"></span>\n          <span class=\"ui-button-text\"  >Close</span>\n        </button>\n      </div>\n\n      <div class=\"modal-body\">\n        <div class=\"pop-up-element title\">כתובת:</div>\n        <div >\n          <input type=\"text\" class=\"pop-up-element color ignore\" [(ngModel)]=\"chosenAddress\" style=\"float: right;\" >\n          <button (click)=\"onFindAddress()\" title=\"Language\" class=\"pop-up-element\" >מצא</button>\n        </div>\n        <div class=\"title\">{{verifiedAddress}}</div>\n        <br>\n        <ul class=\"pop-up-ul\">\n          <img *ngFor=\"let icon of icons;let i=index;\" src=\"{{icon}}\" class=\"icon-img\"\n                  (click)=\"iconUrl=icon;\">\n        </ul>\n        <div style=\"float: right;width: 20%;\">\n          <div class=\"pop-up-element title\">אות:</div>\n          <input class=\"pop-up-element color ignore\" [(ngModel)]=\"title\" title=\"title\" style=\"width: 95%\" >\n        </div>\n        <div>\n          <div class=\"pop-up-element title\">כותרת:</div>\n          <input class=\"pop-up-element color ignore\" [(ngModel)]=\"label\" title=\"label\"  >\n        </div>\n      </div>\n      <div class=\"modal-footer\">\n        <button style =\"background: #f7f7f7\" (click)=\"onChooseAddress();addressShown=false;\" class=\"pop-up-element\">הוסף כתובת</button>\n      </div>\n    </div>\n  <!--/div-->\n</div>\n\n\n<sebm-google-map\n  [latitude]=\"mapS.lat\"\n  [longitude]=\"mapS.lng\"\n  [zoom]=\"mapS.zoom\"\n  [mapDraggable]=\"mapS.isDrag\"\n  [zoomControl]=\"mapS.isZoom\"\n  [scaleControl]=\"mapS.isScale\"\n>\n\n  <sebm-google-map-marker *ngFor=\"let m of markers; let i = index\"\n                          [latitude]=\"m.lat\"\n                          [longitude]=\"m.lng\"\n                          [label]=\"m.label\"\n                          [title]=\"m.title\"\n                          [iconUrl]=\"m.iconUrl\">\n  </sebm-google-map-marker>\n</sebm-google-map>\n\n"
 
-/***/ },
+module.exports = "<button class=\"btn btn-primary glyphicon glyphicon-cog\" (click)=\"addressShown = !addressShown;\" title=\"Address\"></button>\n<!--button class=\"btn btn-success glyphicon glyphicon-flag\" (click)=\"languageShown = !languageShown;addressShown=false;\" title=\"Language\"></button-->\n\n<div *ngIf=\"addressShown\" role=\"dialog\" style=\"z-index: 999999;position: fixed;direction: rtl;width: 260px;\"\n     class=\"ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-dialog-buttons ui-draggable ui-resizable secondLevel\">\n  <!--div class=\"ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix ui-draggable-handle\"-->\n    <div class=\"modal-content\">\n      <!--div class=\"ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix ui-draggable-handle\">\n        <button type=\"button\" class=\"ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close\" data-dismiss=\"modal\" (click)=\"addressShown=false;\">&times;</button>\n      </div-->\n      <div class=\"ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix ui-draggable-handle\">\n        <span id=\"ui-id-4\" class=\"ui-dialog-title\">הוספת סמן</span>\n        <button type=\"button\" (click)=\"addressShown=false;\" style=\"float: right\" class=\"ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close\" role=\"button\" title=\"Close\">\n          <span class=\"ui-button-icon-primary ui-icon ui-icon-closethick\"></span>\n          <span class=\"ui-button-text\"  >Close</span>\n        </button>\n      </div>\n\n      <div class=\"modal-body\">\n        <div class=\"pop-up-element title\">כתובת:</div>\n        <div >\n          <input type=\"text\" class=\"pop-up-element color ignore\" [(ngModel)]=\"chosenAddress\" style=\"float: right;\" >\n          <button (click)=\"onFindAddress()\" title=\"Language\" class=\"pop-up-element\" >מצא</button>\n        </div>\n        <div class=\"title\">{{verifiedAddress}}</div>\n        <br>\n        <ul>\n          <img *ngFor=\"let icon of icons;let i=index;\" src=\"{{icon}}\" class=\"icon-img\"\n                  (click)=\"iconUrl=icon;\">\n        </ul>\n        <div style=\"float: right;width: 20%;\">\n          <div class=\"pop-up-element title\">אות:</div>\n          <input class=\"pop-up-element color ignore\" [(ngModel)]=\"title\" title=\"title\" style=\"width: 95%\" >\n        </div>\n        <div>\n          <div class=\"pop-up-element title\">כותרת:</div>\n          <input class=\"pop-up-element color ignore\" [(ngModel)]=\"label\" title=\"label\"  >\n        </div>\n      </div>\n      <div class=\"modal-footer\">\n        <button style =\"background: #f7f7f7\" (click)=\"onChooseAddress();addressShown=false;\">הוסף כתובת</button>\n      </div>\n    </div>\n  <!--/div-->\n</div>\n\n\n<sebm-google-map\n  [latitude]=\"mapS.lat\"\n  [longitude]=\"mapS.lng\"\n  [zoom]=\"mapS.zoom\"\n  [mapDraggable]=\"mapS.isDrag\"\n  [zoomControl]=\"mapS.isZoom\"\n  [scaleControl]=\"mapS.isScale\"\n>\n\n  <sebm-google-map-marker *ngFor=\"let m of markers; let i = index\"\n                          [latitude]=\"m.lat\"\n                          [longitude]=\"m.lng\"\n                          [label]=\"m.label\"\n                          [title]=\"m.title\"\n                          [iconUrl]=\"m.iconUrl\">\n  </sebm-google-map-marker>\n</sebm-google-map>\n\n"
+
+  /***/ },
 /* 672 */
 /***/ function(module, exports) {
 
@@ -74175,7 +74301,11 @@ var Zone$1 = (function (global) {
             enumerable: true,
             configurable: true
         });
-        
+<<<<<<< HEAD
+
+=======
+
+>>>>>>> 746e3b0da798ee6594ffa2b849e0bc909a4acf70
         Object.defineProperty(Zone, "currentTask", {
             get: function () {
                 return _currentTask;
@@ -74183,7 +74313,11 @@ var Zone$1 = (function (global) {
             enumerable: true,
             configurable: true
         });
-        
+<<<<<<< HEAD
+
+=======
+
+>>>>>>> 746e3b0da798ee6594ffa2b849e0bc909a4acf70
         Object.defineProperty(Zone.prototype, "parent", {
             get: function () {
                 return this._parent;
@@ -74191,7 +74325,11 @@ var Zone$1 = (function (global) {
             enumerable: true,
             configurable: true
         });
-        
+<<<<<<< HEAD
+
+=======
+
+>>>>>>> 746e3b0da798ee6594ffa2b849e0bc909a4acf70
         Object.defineProperty(Zone.prototype, "name", {
             get: function () {
                 return this._name;
@@ -74199,7 +74337,11 @@ var Zone$1 = (function (global) {
             enumerable: true,
             configurable: true
         });
-        
+<<<<<<< HEAD
+
+=======
+
+>>>>>>> 746e3b0da798ee6594ffa2b849e0bc909a4acf70
         Zone.prototype.get = function (key) {
             var zone = this.getZoneWith(key);
             if (zone)
@@ -74308,7 +74450,11 @@ var Zone$1 = (function (global) {
         Zone.__symbol__ = __symbol__;
         return Zone;
     }());
-    
+<<<<<<< HEAD
+
+=======
+
+>>>>>>> 746e3b0da798ee6594ffa2b849e0bc909a4acf70
     var ZoneDelegate = (function () {
         function ZoneDelegate(zone, parentDelegate, zoneSpec) {
             this._taskCounts = { microTask: 0, macroTask: 0, eventTask: 0 };
@@ -74481,7 +74627,11 @@ var Zone$1 = (function (global) {
     function __symbol__(name) {
         return '__zone_symbol__' + name;
     }
-    
+<<<<<<< HEAD
+
+=======
+
+>>>>>>> 746e3b0da798ee6594ffa2b849e0bc909a4acf70
     var symbolSetTimeout = __symbol__('setTimeout');
     var symbolPromise = __symbol__('Promise');
     var symbolThen = __symbol__('then');
@@ -75412,7 +75562,11 @@ function patchViaCapturingAllTheEvents() {
     for (var i = 0; i < eventNames.length; i++) {
         _loop_1(i);
     }
-    
+<<<<<<< HEAD
+
+=======
+
+>>>>>>> 746e3b0da798ee6594ffa2b849e0bc909a4acf70
 }
 
 /**
@@ -75562,4 +75716,8 @@ module.exports = __webpack_require__(406);
 
 /***/ }
 ],[952]);
+<<<<<<< HEAD
 //# sourceMappingURL=main.map
+=======
+//# sourceMappingURL=main.map
+>>>>>>> 746e3b0da798ee6594ffa2b849e0bc909a4acf70
