@@ -1,45 +1,49 @@
 <button class="btn btn-primary glyphicon glyphicon-cog" (click)="addressShown = !addressShown;" title="Address"></button>
 <!--button class="btn btn-success glyphicon glyphicon-flag" (click)="languageShown = !languageShown;addressShown=false;" title="Language"></button-->
 
-<div *ngIf="addressShown" role="dialog" style="z-index: 999999;position: fixed;direction: rtl;">
-  <div class="modal-dialog">
+<div *ngIf="addressShown" role="dialog" style="z-index: 999999;position: fixed;direction: rtl;width: 280px;"
+     class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-dialog-buttons ui-draggable ui-resizable secondLevel">
+  <!--div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix ui-draggable-handle"-->
     <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" (click)="addressShown=false;">&times;</button>
+      <!--div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix ui-draggable-handle">
+        <button type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close" data-dismiss="modal" (click)="addressShown=false;">&times;</button>
+      </div-->
+      <div class="pop-up-element ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix ui-draggable-handle">
+        <span id="ui-id-4" class="ui-dialog-title">הוספת סמן</span>
+        <button type="button" (click)="addressShown=false;" style="float: right" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close" role="button" title="Close">
+          <span class="ui-button-icon-primary ui-icon ui-icon-closethick"></span>
+          <span class="ui-button-text"  >Close</span>
+        </button>
       </div>
+
       <div class="modal-body">
-        <label>כתובת:</label>
+        <div class="pop-up-element title">כתובת:</div>
         <div >
-          <input type="text" class="form-control col-md-10 address-input" id="inputSuccess" [(ngModel)]="chosenAddress" >
-          <button class="btn btn-info col-md-2" (click)="onFindAddress()" title="Language">מצא</button>
+          <input type="text" class="pop-up-element color ignore" [(ngModel)]="chosenAddress" style="float: right;" >
+          <button (click)="onFindAddress()" title="Language" class="pop-up-element" >מצא</button>
         </div>
-        <label>{{verifiedAddress}}</label>
+        <div class="title">{{verifiedAddress}}</div>
         <br>
-        <!--label>IconUrl</label>
-        <input class="form-control" [(ngModel)]="iconUrl" title="icon"-->
-        <ul>
+        <ul class="pop-up-ul">
           <img *ngFor="let icon of icons;let i=index;" src="{{icon}}" class="icon-img"
                   (click)="iconUrl=icon;">
         </ul>
-        <div style="width: 13%;float: right;">
-          <label>אות לסימון:</label>
-          <input class="form-control" [(ngModel)]="title" title="title" style="width: 95%;">
+        <div style="float: right;width: 20%;">
+          <div class="pop-up-element title">אות:</div>
+          <input class="pop-up-element color ignore" [(ngModel)]="title" title="title" style="width: 95%" >
         </div>
         <div>
-          <label>כותרת:</label>
-          <input class="form-control" [(ngModel)]="label" title="label" style="width: 87%;" >
+          <div class="pop-up-element title">כותרת:</div>
+          <input class="pop-up-element color ignore" [(ngModel)]="label" title="label"  >
         </div>
       </div>
       <div class="modal-footer">
-        <button class="btn btn-primary" (click)="onChooseAddress();addressShown=false;">בחר</button>
+        <button style ="background: #f7f7f7" (click)="onChooseAddress();addressShown=false;" class="pop-up-element">הוסף כתובת</button>
       </div>
     </div>
-  </div>
+  <!--/div-->
 </div>
 
-<!--div *ngIf="languageShown" >
-  <label>langua</label>
-</div-->
 
 <sebm-google-map
   [latitude]="mapS.lat"
